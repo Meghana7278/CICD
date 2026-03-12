@@ -1,7 +1,9 @@
 FROM node:20-alpine As build
 WORKDIR /app
 
-COPY package*.json ./
+COPY my-app/package*.json ./
+COPY my-app/. .
+
 RUN npm install
 
 COPY . .
