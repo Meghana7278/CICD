@@ -13,6 +13,7 @@ pipeline{
                 docker stop vite-container || echo Container not running
                 docker rm vite-container || echo Container not found
                 docker run -d -p 8081:00 --name vite-container vite-app
+                ' ' '
             }
         }
     }
